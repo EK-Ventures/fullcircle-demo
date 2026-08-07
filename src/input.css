@@ -27,9 +27,6 @@
   /* Motion */
   --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Layout */
-  --container-content: 1240px;
-
   /* Custom breakpoints (this design predates Tailwind's default scale) */
   --breakpoint-xs: 560px;
   --breakpoint-form: 640px;
