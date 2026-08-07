@@ -10,7 +10,7 @@
   --color-hairline: #232327;
   --color-hairline-soft: #19191c;
 
-  --color-gold: #D4AF37;
+  --color-gold: #CBA065;
   --color-bronze: #C5A059;
 
   --color-primary: #FFFFFF;
@@ -95,17 +95,38 @@
   }
 
   .field-input {
-    @apply bg-panel border border-hairline text-primary font-body text-[0.88rem] py-[0.75em] px-[0.9em] rounded-[2px] transition-colors duration-[250ms] ease-cinematic appearance-none;
+    @apply bg-panel border border-quiet text-primary font-body text-[0.88rem] py-[0.75em] px-[0.9em] rounded-[2px] transition-colors duration-[250ms] ease-cinematic appearance-none;
+  }
+  .field-input:hover {
+    @apply border-primary;
   }
   .field-input:focus {
     @apply border-gold outline-none;
+  }
+  .field-input::placeholder {
+    @apply text-body font-light;
+  }
+  select.field-input {
+    @apply text-body font-light;
   }
 
   .checkbox {
     @apply flex items-start gap-[0.6em] text-[0.82rem] text-body cursor-pointer leading-[1.5];
   }
   .checkbox input {
-    @apply mt-[0.25em] w-[15px] h-[15px] shrink-0;
-    accent-color: var(--color-gold);
+    @apply mt-[0.25em] w-[15px] h-[15px] shrink-0 bg-panel border border-quiet rounded-[2px] appearance-none cursor-pointer transition-colors duration-[250ms] ease-cinematic relative;
+  }
+  .checkbox input:checked {
+    @apply bg-gold border-gold;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23101012' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 8.5l3 3 6-7'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px 11px;
+  }
+  .checkbox input:hover {
+    @apply border-primary;
+  }
+  .checkbox input:focus-visible {
+    @apply border-gold;
   }
 }
