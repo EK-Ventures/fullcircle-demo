@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@source "../index.html";
+
+@theme {
+  /* Colour */
+  --color-void: #07070A;
+  --color-charcoal: #0B0C0E;
+  --color-graphite: #131316;
+  --color-panel: #101012;
+  --color-hairline: #232327;
+  --color-hairline-soft: #19191c;
+
+  --color-gold: #D4AF37;
+  --color-bronze: #C5A059;
+
+  --color-primary: #FFFFFF;
+  --color-body: #9C9CA3;
+  --color-quiet: #616166;
+
+  /* Type */
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --tracking-eyebrow: 0.18em;
+  --tracking-nav: 0.1em;
+
+  /* Motion */
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --container-content: 1240px;
+
+  /* Custom breakpoints (this design predates Tailwind's default scale) */
+  --breakpoint-xs: 560px;
+  --breakpoint-form: 640px;
+  --breakpoint-social: 700px;
+  --breakpoint-split: 860px;
+  --breakpoint-nav: 900px;
+  --breakpoint-grid: 960px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-void text-primary font-body antialiased;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--color-gold);
+    outline-offset: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    * {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+
+  /* Custom chevron for the join-form selects; Tailwind has no built-in
+     equivalent for a hand-drawn two-stroke arrow background. */
+  select.field-input {
+    background-image:
+      linear-gradient(45deg, transparent 50%, var(--color-quiet) 50%),
+      linear-gradient(135deg, var(--color-quiet) 50%, transparent 50%);
+    background-position: calc(100% - 18px) center, calc(100% - 13px) center;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+  }
+}
+
+@layer components {
+  /* Toggled by js/main.js on scroll */
+  .is-scrolled {
+    @apply bg-void/90 backdrop-blur-md border-hairline-soft;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center font-body text-[0.74rem] font-semibold tracking-nav uppercase py-[1em] px-[2em] rounded-[3px] border border-transparent cursor-pointer transition-colors duration-300 ease-cinematic;
+  }
+  .btn-filled {
+    @apply bg-gold text-black hover:bg-[#e6c257];
+  }
+  .btn-outline {
+    @apply border-bronze text-bronze bg-transparent hover:border-gold hover:text-gold;
+  }
+  .btn-small {
+    @apply py-[0.6em] px-[1.4em] text-[0.66rem];
+  }
+
+  .field-input {
+    @apply bg-panel border border-hairline text-primary font-body text-[0.88rem] py-[0.75em] px-[0.9em] rounded-[2px] transition-colors duration-[250ms] ease-cinematic appearance-none;
+  }
+  .field-input:focus {
+    @apply border-gold outline-none;
+  }
+
+  .checkbox {
+    @apply flex items-start gap-[0.6em] text-[0.82rem] text-body cursor-pointer leading-[1.5];
+  }
+  .checkbox input {
+    @apply mt-[0.25em] w-[15px] h-[15px] shrink-0;
+    accent-color: var(--color-gold);
+  }
+}

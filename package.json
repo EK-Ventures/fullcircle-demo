@@ -1,0 +1,14 @@
+{
+  "name": "full-circle-theatre",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Full Circle Theatre landing page. Styles are authored with Tailwind CSS (src/input.css) and compiled to css/styles.css. The deployed site is still plain static files — the build step only runs during development.",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

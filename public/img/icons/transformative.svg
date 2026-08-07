@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 128 128"
+  role="img"
+  aria-labelledby="title desc"
+  fill="none"
+  style="color:#C89B5B">
+  <title id="title">Transformative icon</title>
+  <desc id="desc">A clean concentric transformation icon with an outer circle, inner arcs, and a central opening, representing transformation and change.</desc>
+
+  <g
+    stroke="currentColor"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    vector-effect="non-scaling-stroke">
+
+    <!-- Outer ring -->
+    <circle cx="64" cy="64" r="38"/>
+
+    <!-- Middle circular arcs -->
+    <path d="M64 38
+             A26 26 0 0 1 64 90" />
+    <path d="M64 38
+             A26 26 0 0 0 64 90" />
+
+    <!-- Inner transformative core arcs -->
+    <path d="M58 52
+             A14 14 0 0 0 58 76" />
+    <path d="M70 52
+             A14 14 0 0 1 70 76" />
+  </g>
+</svg>
