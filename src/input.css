@@ -102,7 +102,9 @@
   }
 
   .divider {
-    @apply border-0 border-t border-hairline-soft max-w-7xl mx-auto my-0;
+    @apply border-0 h-px max-w-7xl mx-auto my-0;
+    background: linear-gradient(90deg, transparent, var(--color-bronze) 8%, var(--color-bronze) 92%, transparent);
+    opacity: 0.6;
   }
 
   .eyebrow {
@@ -114,7 +116,11 @@
   }
 
   .feature-icon {
-    @apply w-[64px] h-[64px] mx-auto mb-4 opacity-90;
+    @apply w-[44px] h-[44px] mx-auto mb-4 opacity-90 split:w-[64px] split:h-[64px];
+  }
+
+  .journey-icon {
+    @apply w-[28px] h-[28px] shrink-0 split:w-[38px] split:h-[38px];
   }
 
   .social-link {

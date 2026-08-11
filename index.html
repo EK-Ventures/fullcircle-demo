@@ -49,9 +49,9 @@
         <div class="absolute inset-y-0 right-0 w-[90%] z-0" aria-hidden="true">
             <img class="w-full h-full object-cover object-[70%_30%]" id="hero-parallax" src="public/img/hero.png" alt="">
         </div>
-        <div class="absolute inset-0 z-0 bg-[linear-gradient(100deg,var(--color-void)_0%,rgb(11_12_14_/_0.88)_22%,rgb(11_12_14_/_0.5)_46%,rgb(11_12_14_/_0.12)_72%,transparent_85%),linear-gradient(180deg,rgb(0_0_0_/_0.6)_0%,transparent_130px)]"
+        <div class="absolute inset-0 z-0 bg-[linear-gradient(180deg,rgb(11_12_14_/_0.55)_0%,rgb(11_12_14_/_0.75)_60%,rgb(11_12_14_/_0.92)_100%),linear-gradient(180deg,rgb(0_0_0_/_0.6)_0%,transparent_130px)] split:bg-[linear-gradient(100deg,var(--color-void)_0%,rgb(11_12_14_/_0.88)_22%,rgb(11_12_14_/_0.5)_46%,rgb(11_12_14_/_0.12)_72%,transparent_85%),linear-gradient(180deg,rgb(0_0_0_/_0.6)_0%,transparent_130px)]"
              aria-hidden="true"></div>
-        <div class="relative z-10 w-full max-w-7xl mx-auto">
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-[5vw]">
             <div class="max-w-[480px]">
                 <h1 class="font-display font-medium text-[clamp(2.4rem,5vw,3.4rem)] leading-[1.02] tracking-[0.01em] uppercase mb-4">
                     Full Circle Theatre</h1>
@@ -74,7 +74,7 @@
     <hr class="divider">
 
     <section class="grid grid-cols-1 max-w-7xl mx-auto gap-9 split:grid-cols-3 split:gap-0" id="vision">
-        <div class="relative rounded-[2px] overflow-hidden aspect-[4/3] split:aspect-auto split:col-span-1" data-reveal>
+        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:col-span-1" data-reveal>
             <img class="w-full h-full object-cover" src="public/img/new-stage.png"
                  alt="A silhouetted figure walks through a circular portal opening onto a golden city skyline.">
         </div>
@@ -101,11 +101,11 @@
     <hr class="divider">
 
     <section class="grid grid-cols-1 max-w-7xl mx-auto gap-9 split:grid-cols-3 split:gap-0">
-        <div class="relative rounded-[2px] overflow-hidden aspect-[4/3] split:aspect-auto split:h-full split:order-2 split:col-span-2 delay-150" data-reveal>
+        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:h-full split:order-2 split:col-span-2 delay-150" data-reveal>
             <img class="w-full h-full object-cover" src="public/img/art-forms.png"
                  alt="Four cinematic panels — a lit corridor, a swirling blue vortex, a lantern-lit gathering and a starfield — each with a lone silhouetted figure.">
         </div>
-        <div class="flex flex-col justify-center py-14 split:order-1 split:col-span-1" data-reveal>
+        <div class="flex flex-col justify-center px-[5vw] py-14 split:px-0 split:order-1 split:col-span-1" data-reveal>
             <p class="eyebrow">Where Art Forms
                 Converge</p>
             <h2 class="section-heading">Full
@@ -160,7 +160,7 @@
     <hr class="divider">
 
     <section
-            class="grid grid-cols-1 max-w-7xl mx-auto py-14 gap-9 split:grid-cols-[1.6fr_1fr_1.4fr] split:items-start split:gap-10"
+            class="grid grid-cols-1 max-w-7xl mx-auto px-[5vw] py-14 gap-9 split:px-0 split:grid-cols-[1.6fr_1fr_1.4fr] split:items-start split:gap-10"
             id="journey">
         <div class="flex flex-col justify-center" data-reveal>
             <p class="eyebrow">Created in London.
@@ -180,20 +180,20 @@
         <div class="flex flex-col justify-center delay-150" data-reveal>
             <ul class="flex flex-col gap-6">
                 <li class="flex items-center gap-[0.9em]">
-                    <img class="w-[38px] h-[38px] shrink-0" src="public/img/icons/place-to-discover.svg" alt="">
+                    <img class="journey-icon" src="public/img/icons/place-to-discover.svg" alt="">
                     <span class="font-display text-[1.1rem] leading-[1.2] text-primary">A place to discover important new work.</span>
                 </li>
                 <li class="flex items-center gap-[0.9em]">
-                    <img class="w-[38px] h-[38px] shrink-0" src="public/img/icons/place-to-create.svg" alt="">
+                    <img class="journey-icon" src="public/img/icons/place-to-create.svg" alt="">
                     <span class="font-display text-[1.1rem] leading-[1.2] text-primary">A place artists aspire to create.</span>
                 </li>
                 <li class="flex items-center gap-[0.9em]">
-                    <img class="w-[38px] h-[38px] shrink-0" src="public/img/icons/audiences-travel.svg" alt="">
+                    <img class="journey-icon" src="public/img/icons/audiences-travel.svg" alt="">
                     <span class="font-display text-[1.1rem] leading-[1.2] text-primary">A place audiences travel to experience.</span>
                 </li>
             </ul>
         </div>
-        <div class="relative rounded-[2px] overflow-hidden aspect-[4/3] delay-300" data-reveal>
+        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-[4/3] delay-300" data-reveal>
             <img class="w-full h-full object-cover" src="public/img/connected-world.png"
                  alt="A river skyline at dusk with a domed landmark building lit against the evening sky.">
         </div>
@@ -202,8 +202,8 @@
     <hr class="divider">
 
     <section
-            class="grid grid-cols-1 max-w-7xl mx-auto py-14 gap-9 split:grid-cols-2 split:items-center split:gap-14">
-        <div class="relative rounded-[2px] overflow-hidden aspect-[4/3]" data-reveal>
+            class="grid grid-cols-1 max-w-7xl mx-auto px-[5vw] py-14 gap-9 split:px-0 split:grid-cols-2 split:items-center split:gap-14">
+        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-[4/3]" data-reveal>
             <img class="w-full h-full object-cover" src="public/img/more-than-performance.png"
                  alt="A single shaft of light descending into a dark circular auditorium, with a lone silhouette standing within it.">
         </div>
@@ -230,7 +230,7 @@
 
     <hr class="divider">
 
-    <section class="max-w-7xl mx-auto py-14" id="join">
+    <section class="max-w-7xl mx-auto px-[5vw] py-14 grid:px-0" id="join">
         <div class="grid grid-cols-1 gap-9 grid:grid-cols-[0.62fr_1fr] grid:gap-14 grid:items-start">
             <div data-reveal>
                 <p class="eyebrow">Be There at the
