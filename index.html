@@ -16,23 +16,25 @@
 <a class="absolute -left-[9999px] top-0 z-[200] bg-gold text-black px-4 py-2 focus:left-4 focus:top-4" href="#main">Skip
     to content</a>
 
-<header class="sticky top-0 z-[100] border-b border-transparent bg-transparent transition-colors duration-300 ease-cinematic"
+<header class="sticky top-0 z-[100] border-b border-transparent bg-transparent transition-colors duration-500 ease-cinematic"
         id="site-header">
-    <div class="flex items-center gap-6 max-w-7xl mx-auto px-[5vw] py-2">
+    <div class="site-header-inner flex items-center gap-6 max-w-7xl mx-auto px-[5vw] py-2 transition-[padding] duration-500 ease-cinematic">
         <a class="flex items-center gap-[0.6rem]" href="#">
-            <img class="w-[150px] h-[150px] object-contain" src="public/img/logo.png" alt="Full Circle Theatre">
+            <img class="site-logo w-[150px] h-[150px] object-contain transition-[width,height] duration-500 ease-cinematic"
+                 src="public/img/logo.png" alt="Full Circle Theatre">
         </a>
-        <nav class="hidden nav:flex items-center gap-9 ml-auto" aria-label="Primary">
-            <a class="text-[0.68rem] font-bold tracking-nav uppercase text-primary transition-colors duration-300 ease-cinematic hover:text-gold"
+        <nav class="site-nav hidden nav:flex items-center gap-9 ml-auto" aria-label="Primary">
+            <a class="text-[0.68rem] font-bold tracking-nav uppercase text-primary transition-[color,font-size] duration-500 ease-cinematic hover:text-gold"
                href="#vision">The Vision</a>
-            <a class="text-[0.68rem] font-bold tracking-nav uppercase text-primary transition-colors duration-300 ease-cinematic hover:text-gold"
+            <a class="text-[0.68rem] font-bold tracking-nav uppercase text-primary transition-[color,font-size] duration-500 ease-cinematic hover:text-gold"
                href="#experience">The Experience</a>
-            <a class="text-[0.68rem] font-bold tracking-nav uppercase text-primary transition-colors duration-300 ease-cinematic hover:text-gold"
+            <a class="text-[0.68rem] font-bold tracking-nav uppercase text-primary transition-[color,font-size] duration-500 ease-cinematic hover:text-gold"
                href="#journey">The Journey</a>
-            <a class="text-[0.68rem] font-bold tracking-nav uppercase text-primary transition-colors duration-300 ease-cinematic hover:text-gold"
+            <a class="text-[0.68rem] font-bold tracking-nav uppercase text-primary transition-[color,font-size] duration-500 ease-cinematic hover:text-gold"
                href="#join">Join the Circle</a>
         </nav>
-        <a class="btn btn-outline btn-small rounded-full ml-auto nav:ml-0" href="#join">Get Updates</a>
+        <a class="site-cta btn btn-outline btn-small rounded-full ml-auto nav:ml-0 transition-[color,border-color,padding,font-size] duration-500 ease-cinematic"
+           href="#join">Get Updates</a>
     </div>
 </header>
 
