@@ -30,7 +30,6 @@
   /* Custom breakpoints (this design predates Tailwind's default scale) */
   --breakpoint-xs: 560px;
   --breakpoint-form: 640px;
-  --breakpoint-social: 700px;
   --breakpoint-split: 860px;
   --breakpoint-nav: 900px;
   --breakpoint-grid: 960px;
@@ -82,6 +81,44 @@
   /* Toggled by js/main.js on scroll */
   .is-scrolled {
     @apply bg-void/90 backdrop-blur-md border-hairline-soft;
+  }
+
+  /* Fade-and-rise scroll reveal. Elements start hidden; js/main.js flips
+     .is-visible via IntersectionObserver the first time each one enters
+     the viewport. Stagger between siblings comes from Tailwind's own
+     delay-* utilities on the element. */
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 1000ms var(--ease-cinematic), transform 1000ms var(--ease-cinematic);
+  }
+  [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-link {
+    @apply text-[0.68rem] font-bold tracking-nav uppercase text-primary transition-[color,font-size] duration-500 ease-cinematic hover:text-gold;
+  }
+
+  .divider {
+    @apply border-0 border-t border-hairline-soft max-w-7xl mx-auto my-0;
+  }
+
+  .eyebrow {
+    @apply font-body text-[0.7rem] font-semibold tracking-eyebrow uppercase text-bronze;
+  }
+
+  .section-heading {
+    @apply font-display font-medium text-[clamp(1.6rem,2.6vw,2.1rem)] leading-[1.12] text-primary mt-6;
+  }
+
+  .feature-icon {
+    @apply w-[64px] h-[64px] mx-auto mb-4 opacity-90;
+  }
+
+  .social-link {
+    @apply flex items-center gap-2 text-[0.7rem] tracking-nav text-primary hover:text-gold transition-colors duration-300 ease-cinematic;
   }
 
   .btn {
