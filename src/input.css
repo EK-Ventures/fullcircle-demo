@@ -120,7 +120,7 @@
   }
 
   .journey-icon {
-    @apply w-[28px] h-[28px] shrink-0 split:w-[38px] split:h-[38px];
+    @apply w-[36px] h-[36px] shrink-0 split:w-[50px] split:h-[50px];
   }
 
   .social-link {
