@@ -9,6 +9,7 @@
   --color-panel: #101012;
   --color-hairline: #232327;
   --color-hairline-soft: #19191c;
+  --color-hairline-strong: #34343a;
 
   --color-gold: #CBA065;
   --color-bronze: #C5A059;
@@ -104,7 +105,7 @@
   .divider {
     @apply border-0 h-px max-w-7xl mx-auto my-0;
     background: linear-gradient(90deg, transparent, var(--color-bronze) 8%, var(--color-bronze) 92%, transparent);
-    opacity: 0.6;
+    opacity: 0.25;
   }
 
   .eyebrow {
@@ -112,7 +113,7 @@
   }
 
   .section-heading {
-    @apply font-display font-medium text-[clamp(1.6rem,2.6vw,2.1rem)] leading-[1.12] text-primary mt-6;
+    @apply font-display font-semibold text-[clamp(1.6rem,2.6vw,2.1rem)] leading-[1.12] text-primary mt-6;
   }
 
   .feature-icon {
@@ -124,7 +125,7 @@
   }
 
   .social-link {
-    @apply flex items-center gap-2 text-[0.7rem] tracking-nav text-primary hover:text-gold transition-colors duration-300 ease-cinematic;
+    @apply flex items-center gap-2 text-[0.78rem] font-semibold tracking-nav text-primary/75 hover:text-gold transition-colors duration-300 ease-cinematic;
   }
 
   .btn {
@@ -183,8 +184,8 @@
    text-[0.68rem], py-2, ...) has to live outside the cascade layers to
    take effect. */
 .is-scrolled .site-logo {
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
 }
 .is-scrolled .site-header-inner {
   padding-top: 0.375rem;
