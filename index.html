@@ -60,13 +60,13 @@
             <picture>
                 <source type="image/avif" srcset="public/img/hero.avif">
                 <source type="image/webp" srcset="public/img/hero.webp">
-                <img class="w-full h-full object-cover object-[70%_30%]" id="hero-parallax" src="public/img/hero.png" width="1672" height="941" alt=""
+                <img class="w-full h-full object-cover object-[50%_30%] split:object-[70%_30%]" id="hero-parallax" src="public/img/hero.png" width="1672" height="941" alt=""
                      fetchpriority="high" decoding="async">
             </picture>
         </div>
         <div class="absolute inset-0 z-0 bg-[linear-gradient(180deg,rgb(11_12_14_/_0.55)_0%,rgb(11_12_14_/_0.75)_60%,rgb(11_12_14_/_0.92)_100%),linear-gradient(180deg,rgb(0_0_0_/_0.6)_0%,transparent_130px)] split:bg-[linear-gradient(100deg,var(--color-void)_0%,rgb(11_12_14_/_0.88)_22%,rgb(11_12_14_/_0.5)_46%,rgb(11_12_14_/_0.12)_72%,transparent_85%),linear-gradient(180deg,rgb(0_0_0_/_0.6)_0%,transparent_130px)]"
              aria-hidden="true"></div>
-        <div class="relative z-10 w-full max-w-7xl mx-auto px-[5vw]">
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-[5vw] split:px-0">
             <div class="max-w-[480px]">
                 <h1 class="font-display font-medium text-[clamp(2.4rem,5vw,3.4rem)] leading-[1.02] tracking-[0.01em] uppercase mb-4">
                     Full Circle Theatre</h1>
@@ -158,20 +158,20 @@
                 <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Leading international artists
                     creating bold new work and reimagining significant stories for a new kind of stage.</p>
             </div>
-            <div class="px-4 split:border-l split:border-hairline delay-100" data-reveal>
+            <div class="px-4 split:border-l split:border-hairline-strong delay-100" data-reveal>
                 <img class="feature-icon" src="public/img/icons/intimate.svg" alt="">
                 <h3 class="font-display font-semibold text-[1.4rem] mb-[0.5em]">Intimate</h3>
                 <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Approximately 200 people
                     surrounding the performance, with every audience member extraordinarily close to the actors.</p>
             </div>
-            <div class="px-4 split:border-l split:border-hairline delay-200" data-reveal>
+            <div class="px-4 split:border-l split:border-hairline-strong delay-200" data-reveal>
                 <img class="feature-icon" src="public/img/icons/transformative.svg" alt="">
                 <h3 class="font-display font-semibold text-[1.4rem] mb-[0.5em]">Transformative</h3>
                 <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Cinematic environments, spatial
                     sound and live performance combining to transport audiences between places, periods and emotional
                     worlds.</p>
             </div>
-            <div class="px-4 split:border-l split:border-hairline delay-300" data-reveal>
+            <div class="px-4 split:border-l split:border-hairline-strong delay-300" data-reveal>
                 <img class="feature-icon" src="public/img/icons/unrepeatable.svg" alt="">
                 <h3 class="font-display font-semibold text-[1.4rem] mb-[0.5em]">Unrepeatable</h3>
                 <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Every performance live, immediate
@@ -216,7 +216,7 @@
                 </li>
             </ul>
         </div>
-        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-[4/3] delay-300" data-reveal>
+        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-[4/3] order-first split:order-none delay-300" data-reveal>
             <picture>
                 <source type="image/avif" srcset="public/img/connected-world.avif">
                 <img class="w-full h-full object-cover" src="public/img/connected-world.png" loading="lazy" decoding="async"
@@ -273,7 +273,7 @@
                 </p>
             </div>
 
-            <form class="flex flex-col gap-4 delay-150 grid:border-l grid:border-hairline grid:pl-14" id="join-form" novalidate data-reveal>
+            <form class="flex flex-col gap-4 delay-150 grid:border-l grid:border-hairline-strong grid:pl-14" id="join-form" novalidate data-reveal>
                 <div class="grid grid-cols-1 gap-4 xs:grid-cols-2">
                     <div class="flex flex-col gap-[0.4em]">
                         <label class="sr-only" for="first-name">First name</label>
@@ -400,7 +400,7 @@
                 <p class="text-primary/75 text-[0.9rem] mt-4">Follow the artists, ideas and creative discoveries shaping Full
                     Circle Theatre.</p>
             </div>
-            <div class="flex flex-wrap justify-center items-center gap-x-24 gap-y-10 w-full split:gap-x-0 split:divide-x split:divide-hairline">
+            <div class="flex flex-wrap justify-center items-center gap-x-24 gap-y-10 w-full split:gap-x-0 split:divide-x split:divide-hairline-strong">
                 <a class="social-link split:px-28"
                    href="#">
                     <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
