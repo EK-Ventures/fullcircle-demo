@@ -110,7 +110,7 @@
   }
 
   .eyebrow {
-    @apply font-body text-[0.7rem] font-semibold tracking-eyebrow uppercase text-bronze;
+    @apply font-body text-[0.8rem] font-semibold tracking-eyebrow uppercase text-bronze;
   }
 
   .section-heading {
