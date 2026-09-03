@@ -90,36 +90,41 @@
         </div>
     </section>
 
-    <hr class="divider">
-
-    <section class="max-w-7xl mx-auto px-[5vw] py-14">
-        <div class="grid grid-cols-1 gap-y-9 gap-x-6 text-center split:grid-cols-3">
-            <div class="px-4" data-reveal>
-                <h3 class="font-display font-semibold text-[1.4rem] mb-[0.5em]">Only Around 200 Seats</h3>
-                <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Exceptional performers, only
-                    metres away.</p>
+    <section class="max-w-7xl mx-auto px-[5vw] py-14 grid:px-0">
+        <div class="grid grid-cols-1 gap-9 rounded-lg border border-bronze p-6 split:grid-cols-3 split:gap-0 split:p-10">
+            <div class="flex items-start gap-4 px-4" data-reveal>
+                <img class="w-[40px] h-[40px] shrink-0 split:w-[48px] split:h-[48px]" src="public/img/icons/intimate.svg" alt="">
+                <div>
+                    <h3 class="font-body font-semibold text-[0.8rem] uppercase tracking-nav text-gold mb-[0.4em]">Only Around 200 Seats</h3>
+                    <p class="text-primary/75 text-[0.85rem] leading-[1.4]">Exceptional performers, only metres away.</p>
+                </div>
             </div>
-            <div class="px-4 split:border-l split:border-hairline-strong delay-100" data-reveal>
-                <h3 class="font-display font-semibold text-[1.4rem] mb-[0.5em]">Invisible Technology</h3>
-                <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Immersive environments that
-                    serve the story.</p>
+            <div class="flex items-start gap-4 px-4 split:border-l split:border-hairline-strong delay-100" data-reveal>
+                <img class="w-[40px] h-[40px] shrink-0 split:w-[48px] split:h-[48px]" src="public/img/icons/transformative.svg" alt="">
+                <div>
+                    <h3 class="font-body font-semibold text-[0.8rem] uppercase tracking-nav text-gold mb-[0.4em]">Invisible Technology</h3>
+                    <p class="text-primary/75 text-[0.85rem] leading-[1.4]">Immersive environments that serve the story.</p>
+                </div>
             </div>
-            <div class="px-4 split:border-l split:border-hairline-strong delay-200" data-reveal>
-                <h3 class="font-display font-semibold text-[1.4rem] mb-[0.5em]">London to the World</h3>
-                <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Productions created live and
-                    shared globally.</p>
+            <div class="flex items-start gap-4 px-4 split:border-l split:border-hairline-strong delay-200" data-reveal>
+                <img class="w-[40px] h-[40px] shrink-0 split:w-[48px] split:h-[48px]" src="public/img/icons/world-class.svg" alt="">
+                <div>
+                    <h3 class="font-body font-semibold text-[0.8rem] uppercase tracking-nav text-gold mb-[0.4em]">London to the World</h3>
+                    <p class="text-primary/75 text-[0.85rem] leading-[1.4]">Productions created live and shared globally.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <hr class="divider">
 
-    <section class="max-w-7xl mx-auto px-[5vw] py-20">
-        <div class="max-w-2xl" data-reveal>
-            <h2 class="section-heading mt-0 tracking-[0.01em]">The Best Seat in the House, Every Time.</h2>
-            <p class="font-display italic text-[1.15rem] leading-[1.3] text-primary mt-6">
-                Your evening at Full Circle begins before the performance.
-            </p>
+    <section class="grid grid-cols-1 max-w-7xl mx-auto px-[5vw] py-20 gap-9 split:grid-cols-3 split:gap-14 split:items-center">
+        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:h-full split:col-span-1 bg-graphite border border-hairline" data-reveal>
+            <!-- image to come -->
+        </div>
+        <div class="split:col-span-2 delay-150" data-reveal>
+            <p class="eyebrow">The Best Seat in the House, Every Time.</p>
+            <h2 class="section-heading">Your evening at Full Circle begins before the performance.</h2>
             <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-6">
                 Arrive, meet, dine and enjoy the anticipation of a destination created around the production. Then enter an extraordinarily intimate theatre-in-the-round, where an audience of only around 200 surrounds the performance.
             </p>
@@ -180,8 +185,8 @@
         <div class="flex flex-col justify-center px-[5vw] py-14 grid:px-0 split:order-1 split:col-span-1" data-reveal>
             <p class="eyebrow">Where Art Forms
                 Converge</p>
-            <h2 class="section-heading">Full Circle brings together theatre, cinema, music, movement, visual art and immersive design within a single live experience.</h2>
-            <p class="font-display italic text-[1.25rem] leading-[1.25] text-primary mt-6">
+            <h2 class="font-body font-normal text-[0.92rem] leading-[1.4] text-primary/75 mt-6">Full Circle brings together theatre, cinema, music, movement, visual art and immersive design within a single live experience.</h2>
+            <p class="font-body text-[0.92rem] leading-[1.4] text-primary/75 mt-4">
                 The technology is never the performance. It remains invisible, allowing human performance, story and emotion to lead—while the theatrical world around the audience changes completely.
             </p>
         </div>
@@ -349,106 +354,51 @@
             <form class="flex flex-col gap-4 delay-150 grid:border-l grid:border-hairline-strong grid:pl-14" id="join-form" novalidate data-reveal>
                 <div class="grid grid-cols-1 gap-4 xs:grid-cols-2">
                     <div class="flex flex-col gap-[0.4em]">
-                        <label class="sr-only" for="first-name">First name</label>
-                        <input class="field-input" type="text" id="first-name" name="first-name" required
-                               autocomplete="given-name" placeholder="First name *">
+                        <label class="sr-only" for="name">Full name</label>
+                        <input class="field-input" type="text" id="name" name="name" required
+                               autocomplete="name" placeholder="Full name *">
                     </div>
-                    <div class="flex flex-col gap-[0.4em]">
-                        <label class="sr-only" for="last-name">Last name</label>
-                        <input class="field-input" type="text" id="last-name" name="last-name"
-                               autocomplete="family-name" placeholder="Last name">
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 gap-4 xs:grid-cols-2">
                     <div class="flex flex-col gap-[0.4em]">
                         <label class="sr-only" for="email">Email address</label>
                         <input class="field-input" type="email" id="email" name="email" required autocomplete="email"
                                placeholder="Email address *">
                     </div>
-                    <div class="flex flex-col gap-[0.4em]">
-                        <label class="sr-only" for="country">Country</label>
-                        <select class="field-input" id="country" name="country" autocomplete="country-name">
-                            <option value="" selected>Country</option>
-                            <option value="GB">United Kingdom</option>
-                            <option value="US">United States</option>
-                            <option value="CA">Canada</option>
-                            <option value="AU">Australia</option>
-                            <option value="IE">Ireland</option>
-                            <option value="FR">France</option>
-                            <option value="DE">Germany</option>
-                            <option value="OTHER">Other</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 gap-4 xs:grid-cols-2">
-                    <div class="flex flex-col gap-[0.4em]">
-                        <label class="sr-only" for="organisation">Organisation</label>
-                        <input class="field-input" type="text" id="organisation" name="organisation"
-                               autocomplete="organization" placeholder="Organisation">
-                    </div>
-                    <div class="flex flex-col gap-[0.4em]">
-                        <label class="sr-only" for="interest">Area of interest</label>
-                        <select class="field-input" id="interest" name="interest">
-                            <option value="" selected>Area of interest</option>
-                            <option value="audience">Audience member</option>
-                            <option value="artist">Artist / creative</option>
-                            <option value="press">Press / media</option>
-                            <option value="partner">Partner / sponsor</option>
-                            <option value="investor">Investor</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
                 </div>
 
                 <fieldset class="border-0 pt-2 px-0 pb-0 m-0">
-                    <legend class="text-[0.72rem] font-medium tracking-[0.03em] text-primary pb-4">I would like to receive
-                        information about:
+                    <legend class="text-[0.72rem] font-medium tracking-[0.03em] text-primary pb-4">How would you like to be
+                        involved?
                     </legend>
-                    <div class="grid grid-cols-1 gap-[0.6em] xs:grid-cols-2">
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="productions">
-                            Productions and priority ticket information
+                    <div class="grid grid-cols-2 gap-2 xs:grid-cols-4">
+                        <label class="option-tile">
+                            <input type="radio" name="pathway" value="attend" required>
+                            <img class="option-tile-icon" src="public/img/icons/attend-performance.svg" alt="">
+                            <span class="option-tile-title">Attend a Performance</span>
+                            <span class="option-tile-desc">Priority tickets and production announcements</span>
                         </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="partnerships">
-                            Partnerships and sponsorship
+                        <label class="option-tile">
+                            <input type="radio" name="pathway" value="create" required>
+                            <img class="option-tile-icon" src="public/img/icons/create-with-us.svg" alt="">
+                            <span class="option-tile-title">Create with Us</span>
+                            <span class="option-tile-desc">Opportunities for performers, artists, and creative collaborators</span>
                         </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="international">
-                            International visitor information
+                        <label class="option-tile">
+                            <input type="radio" name="pathway" value="partner" required>
+                            <img class="option-tile-icon" src="public/img/icons/partner-with-us.svg" alt="">
+                            <span class="option-tile-title">Partner with Us</span>
+                            <span class="option-tile-desc">Commercial, cultural and investment conversations</span>
                         </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="investment">
-                            Investment information
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="membership">
-                            Membership and patron opportunities
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="press">
-                            Press and cultural media
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="artist-opportunities">
-                            Artist and creative opportunities
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="announcements">
-                            General announcements
+                        <label class="option-tile">
+                            <input type="radio" name="pathway" value="follow" required>
+                            <img class="option-tile-icon" src="public/img/icons/follow-the-story.svg" alt="">
+                            <span class="option-tile-title">Follow the Story</span>
+                            <span class="option-tile-desc">Launch news, press announcements, and Full Circle updates</span>
                         </label>
                     </div>
                 </fieldset>
 
-                <div class="flex flex-col gap-6 pt-4 border-t border-hairline-soft form:flex-row form:items-center form:justify-between">
-                    <label class="checkbox text-[0.78rem] form:max-w-[60ch]">
-                        <input type="checkbox" name="consent" required>
-                        I would like to receive news, invitations and updates from Full
-                        Circle Theatre. I understand that I can unsubscribe at any time.
-                    </label>
-                    <button class="btn btn-filled form:shrink-0" type="submit">Join the Circle</button>
+                <div class="flex justify-end pt-4 border-t border-hairline-soft">
+                    <button class="btn btn-filled" type="submit">Join the Circle</button>
                 </div>
             </form>
 

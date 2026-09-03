@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="17.964 17.964 92.073 92.073"
+  role="img"
+  aria-labelledby="title desc"
+  fill="none"
+  style="color:#C89B5B">
+  <title id="title">Follow the story icon</title>
+  <desc id="desc">A clean circular icon with a signal radiating from a point, representing news and announcements.</desc>
+
+  <g
+    stroke="currentColor"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    vector-effect="non-scaling-stroke">
+
+    <!-- Outer ring -->
+    <circle cx="64" cy="64" r="38"/>
+
+    <!-- Broadcast source -->
+    <circle cx="50" cy="78" r="3" fill="currentColor" stroke="none"/>
+
+    <!-- Radiating signal arcs -->
+    <path d="M60 78 A10 10 0 0 0 50 68" />
+    <path d="M68 78 A18 18 0 0 0 50 60" />
+  </g>
+</svg>
