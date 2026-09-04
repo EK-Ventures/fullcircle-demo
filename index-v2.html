@@ -40,16 +40,18 @@
         </a>
         <nav class="site-nav hidden nav:flex items-center gap-9 ml-auto" aria-label="Primary">
             <a class="nav-link"
-               href="#vision">The Vision</a>
+               href="#about">About</a>
             <a class="nav-link"
-               href="#experience">The Experience</a>
+               href="#productions">Productions</a>
             <a class="nav-link"
-               href="#journey">The Journey</a>
+               href="#experience">Experience</a>
             <a class="nav-link"
-               href="#join">Join the Circle</a>
+               href="#visit">Visit</a>
+            <a class="nav-link"
+               href="#support">Support</a>
         </nav>
-        <a class="site-cta btn btn-outline btn-small rounded-full ml-auto nav:ml-0 transition-[color,border-color,padding,font-size] duration-500 ease-cinematic"
-           href="#join">Get Updates</a>
+        <a class="site-cta btn btn-outline btn-small ml-auto nav:ml-0 transition-[color,border-color,padding,font-size] duration-500 ease-cinematic"
+           href="#join">Join the Circle</a>
     </div>
 </header>
 
@@ -92,7 +94,7 @@
 
     <hr class="divider">
 
-    <section class="max-w-7xl mx-auto px-[5vw] py-6">
+    <section class="max-w-7xl mx-auto px-[5vw] py-6" id="about">
         <div class="grid grid-cols-1 gap-y-9 gap-x-6 text-center split:grid-cols-3">
             <div class="px-4" data-reveal>
                 <img class="feature-icon" src="public/img/icons/intimate.svg" alt="">
@@ -114,7 +116,7 @@
 
     <hr class="divider">
 
-    <section class="grid grid-cols-1 max-w-7xl mx-auto py-20 gap-9 split:grid-cols-2 split:gap-14 split:items-center">
+    <section class="grid grid-cols-1 max-w-7xl mx-auto py-20 gap-9 split:grid-cols-2 split:gap-14 split:items-center" id="experience">
         <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:h-full" data-reveal>
             <picture>
                 <source type="image/avif" srcset="public/img/new-stage.avif">
@@ -144,7 +146,7 @@
     <hr class="divider">
 
 
-    <section class="grid grid-cols-1 max-w-7xl mx-auto gap-9 split:grid-cols-3 split:gap-0">
+    <section class="grid grid-cols-1 max-w-7xl mx-auto gap-9 split:grid-cols-3 split:gap-0" id="productions">
         <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:h-full split:order-2 split:col-span-2 delay-150" data-reveal>
             <picture>
                 <source type="image/avif" srcset="public/img/art-forms.avif">
@@ -167,12 +169,8 @@
 
     <section class="grid grid-cols-1 max-w-7xl mx-auto py-14 gap-9 split:grid-cols-2 split:gap-14 split:items-center">
         <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:h-full" data-reveal>
-            <picture>
-                <source type="image/avif" srcset="public/img/more-than-performance.avif">
-                <source type="image/webp" srcset="public/img/more-than-performance.webp">
-                <img class="w-full h-full object-cover" src="public/img/more-than-performance.png" loading="lazy" decoding="async"
-                     alt="A single shaft of light descending into a dark circular auditorium, with a lone silhouette standing within it.">
-            </picture>
+            <img class="w-full h-full object-cover" src="public/img/immersion.png" loading="lazy" decoding="async"
+                 alt="A single shaft of light descending into a dark circular auditorium, with a lone silhouette standing within it.">
         </div>
         <div class="px-[5vw] grid:px-0 delay-150" data-reveal>
             <p class="eyebrow">Created Live in London.
@@ -189,7 +187,7 @@
 
     <hr class="divider">
 
-    <section class="grid grid-cols-1 max-w-7xl mx-auto py-14 gap-9 split:grid-cols-2 split:gap-14 split:items-center">
+    <section class="grid grid-cols-1 max-w-7xl mx-auto py-14 gap-9 split:grid-cols-2 split:gap-14 split:items-center" id="visit">
         <div class="px-[5vw] grid:px-0" data-reveal>
             <p class="eyebrow">A New Cultural Landmark for London</p>
             <h2 class="section-heading">Full Circle Theatre will be a home for exceptional performance, creative collaboration and new theatrical ideas - a London destination with an international audience.</h2>
@@ -237,31 +235,31 @@
                     </div>
                 </div>
 
-                <fieldset class="border-0 pt-0 px-0 pb-0 m-0">
+                <fieldset class="border-0 pt-0 px-0 pb-12 m-0">
                     <legend class="text-primary/75 text-[0.92rem] leading-[1.4] pt-4 pb-2">What are you interested in?
                     </legend>
                     <div class="grid grid-cols-2 gap-2 xs:grid-cols-4">
                         <label class="option-tile">
                             <input type="radio" name="pathway" value="attend" required>
-                            <img class="option-tile-icon" src="public/img/icons/attend-performance.svg" alt="">
+                            <img class="option-tile-icon" src="public/img/icons/attend.svg" alt="">
                             <span class="option-tile-title">Attend a Performance</span>
                             <span class="option-tile-desc">Priority tickets and production announcements</span>
                         </label>
                         <label class="option-tile">
                             <input type="radio" name="pathway" value="create" required>
-                            <img class="option-tile-icon" src="public/img/icons/create-with-us.svg" alt="">
+                            <img class="option-tile-icon" src="public/img/icons/create.svg" alt="">
                             <span class="option-tile-title">Create with Us</span>
                             <span class="option-tile-desc">Opportunities for performers, artists, and creative collaborators</span>
                         </label>
                         <label class="option-tile">
                             <input type="radio" name="pathway" value="partner" required>
-                            <img class="option-tile-icon" src="public/img/icons/partner-with-us.svg" alt="">
+                            <img class="option-tile-icon" src="public/img/icons/partner.svg" alt="">
                             <span class="option-tile-title">Partner with Us</span>
                             <span class="option-tile-desc">Commercial, cultural and investment conversations</span>
                         </label>
                         <label class="option-tile">
                             <input type="radio" name="pathway" value="follow" required>
-                            <img class="option-tile-icon" src="public/img/icons/follow-the-story.svg" alt="">
+                            <img class="option-tile-icon" src="public/img/icons/follow.svg" alt="">
                             <span class="option-tile-title">Follow the Story</span>
                             <span class="option-tile-desc">Launch news, press announcements, and Full Circle updates</span>
                         </label>
@@ -283,7 +281,7 @@
 
     <hr class="divider">
 
-    <section class="max-w-7xl mx-auto px-[5vw] py-14" id="partners">
+    <section class="max-w-7xl mx-auto px-[5vw] py-14" id="support">
         <div class="flex flex-wrap justify-center items-center gap-10 split:gap-16">
             <div data-reveal>
                 <img class="w-24 h-24 rounded-full object-cover ring-1 ring-hairline-strong split:w-28 split:h-28"
@@ -356,13 +354,13 @@
 
         <hr class="divider w-full">
 
-        <div class="flex flex-col items-center text-center gap-6 w-full split:flex-row split:justify-between">
-            <p class="text-[0.72rem] text-primary/75 order-3 split:order-1">© 2026 Full Circle Theatre. All rights reserved.</p>
-            <picture class="order-1 split:order-2">
+        <div class="grid grid-cols-3 items-center gap-6 w-full text-center">
+            <p class="text-[0.72rem] text-primary/75 justify-self-start text-left">© 2026 Full Circle Theatre. All rights reserved.</p>
+            <picture class="justify-self-center">
                 <source type="image/webp" srcset="public/img/logo.webp">
                 <img class="w-20 h-20 object-contain" src="public/img/logo.png" width="350" height="327" alt="Full Circle Theatre">
             </picture>
-            <div class="flex flex-wrap justify-center gap-6 order-2 split:order-3">
+            <div class="flex flex-wrap justify-end gap-6 justify-self-end">
                 <a class="text-[0.7rem] tracking-nav uppercase text-primary/75 hover:text-gold transition-colors duration-300 ease-cinematic"
                    href="#">Privacy Policy</a>
                 <a class="text-[0.7rem] tracking-nav uppercase text-primary/75 hover:text-gold transition-colors duration-300 ease-cinematic"

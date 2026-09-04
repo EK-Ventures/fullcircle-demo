@@ -195,10 +195,10 @@
     @apply sr-only;
   }
   .option-tile-icon {
-    @apply w-[20px] h-[20px] shrink-0 split:w-[24px] split:h-[24px];
+    @apply w-[28px] h-[28px] shrink-0;
   }
   .option-tile-title {
-    @apply font-body font-semibold uppercase text-[0.76rem] text-gold;
+    @apply font-body font-semibold uppercase text-[0.76rem] text-gold pt-2;
   }
   .option-tile-desc {
     @apply text-body text-[0.74rem] leading-[1.3] max-w-[18ch];
