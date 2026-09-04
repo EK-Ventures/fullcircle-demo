@@ -179,7 +179,7 @@
   }
 
   .option-tile {
-    @apply flex flex-col items-center justify-center text-center gap-[0.3em] bg-panel border border-hairline-strong rounded-[2px] px-[0.6em] py-[0.45em] cursor-pointer transition-colors duration-[250ms] ease-cinematic;
+    @apply flex flex-col items-center justify-center text-center gap-[0.3em] bg-panel border border-hairline-strong rounded-[2px] px-[1.1em] py-[1.2em] cursor-pointer transition-colors duration-[250ms] ease-cinematic;
   }
   .option-tile:hover {
     @apply border-primary;
