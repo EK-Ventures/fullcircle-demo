@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Circle Theatre — A New Cultural Landmark for London</title>
+    <title>Full Circle Theatre - A New Cultural Landmark for London</title>
     <meta name="description"
           content="Full Circle Theatre is a new international centre for live dramatic art, coming to London.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,22 +34,24 @@
         <a class="flex items-center gap-[0.6rem]" href="#">
             <picture>
                 <source type="image/webp" srcset="public/img/logo.webp">
-                <img class="site-logo w-[180px] h-[180px] object-contain transition-[width,height] duration-500 ease-cinematic"
+                <img class="site-logo w-[144px] h-[144px] object-contain transition-[width,height] duration-500 ease-cinematic"
                      src="public/img/logo.png" width="350" height="327" alt="Full Circle Theatre">
             </picture>
         </a>
         <nav class="site-nav hidden nav:flex items-center gap-9 ml-auto" aria-label="Primary">
             <a class="nav-link"
-               href="#vision">The Vision</a>
+               href="#about">About</a>
             <a class="nav-link"
-               href="#experience">The Experience</a>
+               href="#productions">Productions</a>
             <a class="nav-link"
-               href="#journey">The Journey</a>
+               href="#experience">Experience</a>
             <a class="nav-link"
-               href="#join">Join the Circle</a>
+               href="#visit">Visit</a>
+            <a class="nav-link"
+               href="#support">Support</a>
         </nav>
-        <a class="site-cta btn btn-outline btn-small rounded-full ml-auto nav:ml-0 transition-[color,border-color,padding,font-size] duration-500 ease-cinematic"
-           href="#join">Get Updates</a>
+        <a class="site-cta btn btn-outline btn-small ml-auto nav:ml-0 transition-[color,border-color,padding,font-size] duration-500 ease-cinematic"
+           href="#join">Join the Circle</a>
     </div>
 </header>
 
@@ -67,29 +69,55 @@
         <div class="absolute inset-0 z-0 bg-[linear-gradient(180deg,rgb(11_12_14_/_0.55)_0%,rgb(11_12_14_/_0.75)_60%,rgb(11_12_14_/_0.92)_100%),linear-gradient(180deg,rgb(0_0_0_/_0.6)_0%,transparent_130px)] split:bg-[linear-gradient(100deg,var(--color-void)_0%,rgb(11_12_14_/_0.88)_22%,rgb(11_12_14_/_0.5)_46%,rgb(11_12_14_/_0.12)_72%,transparent_85%),linear-gradient(180deg,rgb(0_0_0_/_0.6)_0%,transparent_130px)]"
              aria-hidden="true"></div>
         <div class="relative z-10 w-full max-w-7xl mx-auto px-[5vw] grid:px-0">
-            <div class="max-w-[480px]">
-                <h1 class="font-display font-medium text-[clamp(2.4rem,5vw,3.4rem)] leading-[1.02] tracking-[0.01em] uppercase mb-4">
-                    Full Circle Theatre</h1>
-                <p class="font-body text-[0.8rem] font-medium tracking-nav uppercase text-bronze mb-4">A New Cultural
-                    Landmark for London</p>
-                <p class="text-[0.95rem] leading-[1.4] text-primary/75 max-w-[42ch] mb-6">
-                    World-class live performance, cinematic environments and extraordinary
-                    international artists, brought together in a new kind of theatre.
-                    Coming to London.
+            <div class="max-w-xl pt-6">
+                <p class="eyebrow mb-3">Full Circle Theatre</p>
+                <h1 class="font-display font-medium text-[clamp(1.7rem,3.8vw,2.5rem)] leading-[1.15] tracking-[0.01em] mb-4">
+                    THE WORLD'S GREATEST <br> PERFORMERS. <br>
+                    CLOSER THAN YOU'VE EVER <br> EXPERIENCED THEM.
+                </h1>
+                <p class="text-[0.95rem] leading-[1.4] text-primary/75 max-w-xl mb-5">
+                    An extraordinary new 200-seat theatre-in-the-round, where world-class
+                    live performance meets invisible cinematic technology and theatrical
+                    worlds transform around you.
+                </p>
+                <p class="font-body text-[0.8rem] font-semibold tracking-nav uppercase text-gold  max-w-xl mb-6">
+                    Created in London. Live-Streamed to the World.
                 </p>
                 <div class="flex flex-nowrap gap-2 xs:gap-4 mb-4">
                     <a class="btn btn-filled px-[1.2em] text-[0.62rem] xs:px-[2em] xs:text-[0.74rem]" href="#join">Join the Circle</a>
                     <a class="btn btn-outline px-[1.2em] text-[0.62rem] xs:px-[2em] xs:text-[0.74rem]" href="#vision">Enter the Story</a>
                 </div>
-                <p class="text-[0.8rem] text-gold">Be among the first to discover what comes next.</p>
+                <p class="text-[0.8rem] text-primary mb-3">Priority access to tickets, production announcements and special events.</p>
             </div>
         </div>
     </section>
 
     <hr class="divider">
 
-    <section class="grid grid-cols-1 max-w-7xl mx-auto gap-9 split:grid-cols-3 split:gap-0" id="vision">
-        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:col-span-1" data-reveal>
+    <section class="max-w-7xl mx-auto px-[5vw] py-6" id="about">
+        <div class="grid grid-cols-1 gap-y-9 gap-x-6 text-center split:grid-cols-3">
+            <div class="px-4" data-reveal>
+                <img class="feature-icon" src="public/img/icons/intimate.svg" alt="">
+                <h3 class="font-display font-semibold text-[1.4rem] text-primary mb-[0.5em]">Only Around 200 Seats</h3>
+                <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Exceptional performers, only metres away.</p>
+            </div>
+            <div class="px-4 split:border-l split:border-hairline-strong delay-100" data-reveal>
+                <img class="feature-icon" src="public/img/icons/transformative.svg" alt="">
+                <h3 class="font-display font-semibold text-[1.4rem] text-primary mb-[0.5em]">Invisible Technology</h3>
+                <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Immersive environments that serve the story.</p>
+            </div>
+            <div class="px-4 split:border-l split:border-hairline-strong delay-200" data-reveal>
+                <img class="feature-icon" src="public/img/icons/world-class.svg" alt="">
+                <h3 class="font-display font-semibold text-[1.4rem] text-primary mb-[0.5em]">London to the World</h3>
+                <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Productions created live and shared globally.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="grid grid-cols-1 max-w-7xl mx-auto py-20 gap-9 split:grid-cols-2 split:gap-14 split:items-center">
+        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:h-full" data-reveal>
             <picture>
                 <source type="image/avif" srcset="public/img/new-stage.avif">
                 <source type="image/webp" srcset="public/img/new-stage.webp">
@@ -97,126 +125,77 @@
                      alt="A silhouetted figure walks through a circular portal opening onto a golden city skyline.">
             </picture>
         </div>
-        <div class="flex flex-col justify-center px-[5vw] py-14 split:col-span-2 delay-150" data-reveal>
-            <p class="eyebrow">A New Stage for a
-                New Cultural Age</p>
-            <h2 class="section-heading">Full
-                Circle Theatre is being created as a new international centre for live dramatic art.</h2>
+        <div class="px-[5vw] grid:px-0 delay-150" data-reveal>
+            <p class="eyebrow">The Best Seat in the House, Every Time.</p>
+            <h2 class="section-heading">Your evening at Full Circle begins before the performance.</h2>
             <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-6">
-                It will bring together exceptional actors, writers, directors,
-                filmmakers, visual artists, musicians and designers to create
-                performances that move beyond the boundaries of the conventional
-                stage.
+                Arrive, meet, dine and enjoy the anticipation of a destination created around the production. Then enter an extraordinarily intimate theatre-in-the-round, where an audience of only around 200 surrounds the performance.
             </p>
             <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-4">
-                In an intimate auditorium, the audience will surround the performers
-                as entire cinematic worlds unfold around them.
+                The actors are not distant figures on a stage. They are only metres away. Every expression, every breath and every moment of emotion can be experienced at remarkably close quarters.
             </p>
-            <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-4">The result will be theatre experienced not from a
-                distance, but from within.</p>
+            <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-4">
+                As the performance unfolds, the world around you transforms through cinematic environments, spatial sound and technology you never see.
+            </p>
+            <p class="font-display italic text-[1.2rem] leading-[1.25] text-primary mt-6">
+                The technology is not the performance. It enables the performance, leaving the actors, the story and the shared human experience at the centre of everything.
+            </p>
         </div>
     </section>
 
     <hr class="divider">
 
-    <section class="grid grid-cols-1 max-w-7xl mx-auto gap-9 split:grid-cols-3 split:gap-0">
+
+    <section class="grid grid-cols-1 max-w-7xl mx-auto gap-9 split:grid-cols-3 split:gap-0" id="productions">
         <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:h-full split:order-2 split:col-span-2 delay-150" data-reveal>
             <picture>
                 <source type="image/avif" srcset="public/img/art-forms.avif">
                 <source type="image/webp" srcset="public/img/art-forms.webp">
                 <img class="w-full h-full object-cover" src="public/img/art-forms.png" loading="lazy" decoding="async"
-                     alt="Four cinematic panels — a lit corridor, a swirling blue vortex, a lantern-lit gathering and a starfield — each with a lone silhouetted figure.">
+                     alt="Four cinematic panels - a lit corridor, a swirling blue vortex, a lantern-lit gathering and a starfield - each with a lone silhouetted figure.">
             </picture>
         </div>
         <div class="flex flex-col justify-center px-[5vw] py-14 grid:px-0 split:order-1 split:col-span-1" data-reveal>
             <p class="eyebrow">Where Art Forms
                 Converge</p>
-            <h2 class="section-heading">Full
-                Circle Theatre will exist at the meeting point of theatre, cinema, visual art, sound, design and
-                contemporary technology.</h2>
-            <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-6">Each production will begin with the artist and the
-                story.</p>
-            <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-4">
-                Technology will remain largely invisible, allowing a room to become
-                a city, an ocean, a memory or another century without breaking the
-                connection between actor and audience.
-            </p>
-            <p class="font-display italic text-[1.25rem] leading-[1.1] text-primary mt-4">
-                This is not theatre imitating cinema.<br>
-                It is a new dramatic language, created live.
+            <h2 class="section-heading">Full Circle brings together theatre, cinema, music, movement, visual art and immersive design within a single live experience.</h2>
+            <p class="font-body text-[0.92rem] leading-[1.4] text-primary/75 mt-4">
+                The technology is never the performance. It remains invisible, allowing human performance, story and emotion to lead-while the theatrical world around the audience changes completely.
             </p>
         </div>
     </section>
 
     <hr class="divider">
 
-    <section class="max-w-7xl mx-auto px-[5vw] py-14" id="experience">
-        <div class="grid grid-cols-1 gap-y-9 gap-x-6 text-center split:grid-cols-4">
-            <div class="px-4" data-reveal>
-                <img class="feature-icon" src="public/img/icons/world-class.svg" alt="">
-                <h3 class="font-display font-semibold text-[1.4rem] mb-[0.5em]">World-Class</h3>
-                <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Leading international artists
-                    creating bold new work and reimagining significant stories for a new kind of stage.</p>
-            </div>
-            <div class="px-4 split:border-l split:border-hairline-strong delay-100" data-reveal>
-                <img class="feature-icon" src="public/img/icons/intimate.svg" alt="">
-                <h3 class="font-display font-semibold text-[1.4rem] mb-[0.5em]">Intimate</h3>
-                <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Approximately 200 people
-                    surrounding the performance, with every audience member extraordinarily close to the actors.</p>
-            </div>
-            <div class="px-4 split:border-l split:border-hairline-strong delay-200" data-reveal>
-                <img class="feature-icon" src="public/img/icons/transformative.svg" alt="">
-                <h3 class="font-display font-semibold text-[1.4rem] mb-[0.5em]">Transformative</h3>
-                <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Cinematic environments, spatial
-                    sound and live performance combining to transport audiences between places, periods and emotional
-                    worlds.</p>
-            </div>
-            <div class="px-4 split:border-l split:border-hairline-strong delay-300" data-reveal>
-                <img class="feature-icon" src="public/img/icons/unrepeatable.svg" alt="">
-                <h3 class="font-display font-semibold text-[1.4rem] mb-[0.5em]">Unrepeatable</h3>
-                <p class="text-primary/75 text-[0.85rem] leading-[1.4] max-w-[28ch] mx-auto">Every performance live, immediate
-                    and subtly different, creating an experience that exists fully only for the people present.</p>
-            </div>
+    <section class="grid grid-cols-1 max-w-7xl mx-auto py-14 gap-9 split:grid-cols-2 split:gap-14 split:items-center" id="experience">
+        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:h-full" data-reveal>
+            <img class="w-full h-full object-cover" src="public/img/immersion.png" loading="lazy" decoding="async"
+                 alt="A single shaft of light descending into a dark circular auditorium, with a lone silhouette standing within it.">
+        </div>
+        <div class="px-[5vw] grid:px-0 delay-150" data-reveal>
+            <p class="eyebrow">Created Live in London.
+                Experienced Around the World.</p>
+            <h2 class="section-heading">Full Circle productions are conceived for the intimacy and immediacy of live performance and designed from the outset for cinematic capture.</h2>
+            <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-4">
+                Selected productions will be shared with audiences around the world through cinema, livestreaming and on-demand release.
+            </p>
+            <p class="font-display italic text-[1.25rem] leading-[1.25] text-primary mt-4">
+                From an intimate 200-seat London theatre to a global audience, Full Circle brings live performance and cinematic distribution together as one integrated experience.
+            </p>
         </div>
     </section>
 
     <hr class="divider">
 
-    <section
-            class="grid grid-cols-1 max-w-7xl mx-auto px-[5vw] py-14 gap-9 grid:px-0 split:grid-cols-[1.6fr_1fr_1.4fr] split:items-start split:gap-10"
-            id="journey">
-        <div class="flex flex-col justify-center" data-reveal>
-            <p class="eyebrow">Created in London.
-                Connected to the World.</p>
-            <h2 class="section-heading">
-                London has always been a meeting place for artists, ideas and audiences from around the world.</h2>
-            <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-6">
-                Full Circle Theatre will build upon that tradition, presenting work
-                with international artists and inviting global audiences to
-                encounter a new form of live performance.
-            </p>
-            <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-4">
-                Its ambition is to become both a defining London cultural experience
-                and an international centre for the development of dramatic art.
+    <section class="grid grid-cols-1 max-w-7xl mx-auto py-14 gap-9 split:grid-cols-2 split:gap-14 split:items-center" id="visit">
+        <div class="px-[5vw] grid:px-0" data-reveal>
+            <p class="eyebrow">A New Cultural Landmark for London</p>
+            <h2 class="section-heading">Full Circle Theatre will be a home for exceptional performance, creative collaboration and new theatrical ideas - a London destination with an international audience.</h2>
+            <p class="font-display italic text-[1.25rem] leading-[1.25] text-primary mt-4">
+                Created in London and shared with the world, Full Circle will bring together artists, audiences and art forms within an intimate theatrical experience unlike any other.
             </p>
         </div>
-        <div class="flex flex-col justify-center delay-150" data-reveal>
-            <ul class="flex flex-col gap-6">
-                <li class="flex items-center gap-[0.9em]">
-                    <img class="journey-icon" src="public/img/icons/place-to-discover.svg" alt="">
-                    <span class="font-body text-[1.1rem] leading-[1.2] text-primary">A place to discover important new work.</span>
-                </li>
-                <li class="flex items-center gap-[0.9em]">
-                    <img class="journey-icon" src="public/img/icons/place-to-create.svg" alt="">
-                    <span class="font-body text-[1.1rem] leading-[1.2] text-primary">A place artists aspire to create.</span>
-                </li>
-                <li class="flex items-center gap-[0.9em]">
-                    <img class="journey-icon" src="public/img/icons/audiences-travel.svg" alt="">
-                    <span class="font-body text-[1.1rem] leading-[1.2] text-primary">A place audiences travel to experience.</span>
-                </li>
-            </ul>
-        </div>
-        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-[4/3] order-first split:order-none delay-300" data-reveal>
+        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-auto split:h-full delay-150" data-reveal>
             <picture>
                 <source type="image/avif" srcset="public/img/connected-world.avif">
                 <img class="w-full h-full object-cover" src="public/img/connected-world.png" loading="lazy" decoding="async"
@@ -227,155 +206,68 @@
 
     <hr class="divider">
 
-    <section
-            class="grid grid-cols-1 max-w-7xl mx-auto px-[5vw] py-14 gap-9 grid:px-0 split:grid-cols-2 split:items-center split:gap-14">
-        <div class="relative rounded-[2px] overflow-hidden aspect-[16/9] split:aspect-[4/3]" data-reveal>
-            <picture>
-                <source type="image/avif" srcset="public/img/more-than-performance.avif">
-                <source type="image/webp" srcset="public/img/more-than-performance.webp">
-                <img class="w-full h-full object-cover" src="public/img/more-than-performance.png" loading="lazy" decoding="async"
-                     alt="A single shaft of light descending into a dark circular auditorium, with a lone silhouette standing within it.">
-            </picture>
-        </div>
-        <div class="flex flex-col justify-center delay-150" data-reveal>
-            <p class="eyebrow">More Than a
-                Performance</p>
-            <h2 class="section-heading">The
-                most memorable cultural experiences continue long after we leave them.</h2>
-            <p class="text-primary/75 text-[0.92rem] leading-[1.4] max-w-[50ch] mt-6">They change the way we see a story, an
-                artist, a city or ourselves.</p>
-            <p class="text-primary/75 text-[0.92rem] leading-[1.4] max-w-[50ch] mt-4">
-                Full Circle Theatre will create performances of exceptional visual,
-                emotional and intellectual ambition, designed to become part of the
-                cultural memory of their audiences.
-            </p>
-            <p class="text-primary/75 text-[0.92rem] leading-[1.4] max-w-[50ch] mt-4">
-                Each visit should feel significant. Each production should offer
-                something that cannot be encountered anywhere else.
-            </p>
-            <p class="font-body not-italic font-semibold text-[0.95rem] text-gold mt-4">Come for the performance. Leave
-                with a different view of the world.</p>
-        </div>
-    </section>
-
-    <hr class="divider">
-
     <section class="max-w-7xl mx-auto px-[5vw] py-14 grid:px-0" id="join">
-        <div class="grid grid-cols-1 gap-9 grid:grid-cols-[0.62fr_1fr] grid:gap-14 grid:items-start">
+        <div class="grid grid-cols-1 gap-9 grid:grid-cols-[1fr_3fr] grid:gap-14 grid:items-start">
             <div data-reveal>
-                <p class="eyebrow">Be There at the
-                    Beginning</p>
-                <h2 class="font-display font-medium text-[clamp(1.9rem,3.4vw,2.3rem)] mt-4">Join the Circle</h2>
+                <p class="eyebrow">Be First in Line</p>
+                <h2 class="font-display font-medium text-primary text-[clamp(1.9rem,3.4vw,2.3rem)] mt-2">Join the Circle</h2>
                 <p class="text-primary/75 text-[0.92rem] leading-[1.4] max-w-[40ch] mt-4">
-                    Join the Full Circle Theatre community and be among the first to
-                    receive opening announcements, artist news, production previews,
-                    invitations and priority information.
+                    With only around 200 seats available at each performance,
+                    tickets will always be limited.
+                </p>
+                <p class="text-primary/75 text-[0.92rem] leading-[1.4] max-w-[40ch] mt-4">
+                    Join the Circle for priority access to tickets, new
+                    production announcements and special events.
                 </p>
             </div>
 
             <form class="flex flex-col gap-4 delay-150 grid:border-l grid:border-hairline-strong grid:pl-14" id="join-form" novalidate data-reveal>
                 <div class="grid grid-cols-1 gap-4 xs:grid-cols-2">
                     <div class="flex flex-col gap-[0.4em]">
-                        <label class="sr-only" for="first-name">First name</label>
-                        <input class="field-input" type="text" id="first-name" name="first-name" required
-                               autocomplete="given-name" placeholder="First name *">
+                        <label class="sr-only" for="name">Full name</label>
+                        <input class="field-input" type="text" id="name" name="name" required
+                               autocomplete="name" placeholder="Full name *">
                     </div>
-                    <div class="flex flex-col gap-[0.4em]">
-                        <label class="sr-only" for="last-name">Last name</label>
-                        <input class="field-input" type="text" id="last-name" name="last-name"
-                               autocomplete="family-name" placeholder="Last name">
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 gap-4 xs:grid-cols-2">
                     <div class="flex flex-col gap-[0.4em]">
                         <label class="sr-only" for="email">Email address</label>
                         <input class="field-input" type="email" id="email" name="email" required autocomplete="email"
                                placeholder="Email address *">
                     </div>
-                    <div class="flex flex-col gap-[0.4em]">
-                        <label class="sr-only" for="country">Country</label>
-                        <select class="field-input" id="country" name="country" autocomplete="country-name">
-                            <option value="" selected>Country</option>
-                            <option value="GB">United Kingdom</option>
-                            <option value="US">United States</option>
-                            <option value="CA">Canada</option>
-                            <option value="AU">Australia</option>
-                            <option value="IE">Ireland</option>
-                            <option value="FR">France</option>
-                            <option value="DE">Germany</option>
-                            <option value="OTHER">Other</option>
-                        </select>
-                    </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-4 xs:grid-cols-2">
-                    <div class="flex flex-col gap-[0.4em]">
-                        <label class="sr-only" for="organisation">Organisation</label>
-                        <input class="field-input" type="text" id="organisation" name="organisation"
-                               autocomplete="organization" placeholder="Organisation">
-                    </div>
-                    <div class="flex flex-col gap-[0.4em]">
-                        <label class="sr-only" for="interest">Area of interest</label>
-                        <select class="field-input" id="interest" name="interest">
-                            <option value="" selected>Area of interest</option>
-                            <option value="audience">Audience member</option>
-                            <option value="artist">Artist / creative</option>
-                            <option value="press">Press / media</option>
-                            <option value="partner">Partner / sponsor</option>
-                            <option value="investor">Investor</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                </div>
-
-                <fieldset class="border-0 pt-2 px-0 pb-0 m-0">
-                    <legend class="text-[0.72rem] font-medium tracking-[0.03em] text-primary pb-4">I would like to receive
-                        information about:
+                <fieldset class="border-0 pt-0 px-0 pb-12 m-0">
+                    <legend class="text-primary/75 text-[0.92rem] leading-[1.4] pt-4 pb-2">What are you interested in?
                     </legend>
-                    <div class="grid grid-cols-1 gap-[0.6em] xs:grid-cols-2">
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="productions">
-                            Productions and priority ticket information
+                    <div class="grid grid-cols-2 gap-2 xs:grid-cols-4">
+                        <label class="option-tile">
+                            <input type="radio" name="pathway" value="attend" required>
+                            <img class="option-tile-icon" src="public/img/icons/attend.svg" alt="">
+                            <span class="option-tile-title">Attend a Performance</span>
+                            <span class="option-tile-desc">Priority tickets and production announcements</span>
                         </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="partnerships">
-                            Partnerships and sponsorship
+                        <label class="option-tile">
+                            <input type="radio" name="pathway" value="create" required>
+                            <img class="option-tile-icon" src="public/img/icons/create.svg" alt="">
+                            <span class="option-tile-title">Create with Us</span>
+                            <span class="option-tile-desc">Opportunities for performers, artists, and creative collaborators</span>
                         </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="international">
-                            International visitor information
+                        <label class="option-tile">
+                            <input type="radio" name="pathway" value="partner" required>
+                            <img class="option-tile-icon" src="public/img/icons/partner.svg" alt="">
+                            <span class="option-tile-title">Partner with Us</span>
+                            <span class="option-tile-desc">Commercial, cultural and investment conversations</span>
                         </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="investment">
-                            Investment information
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="membership">
-                            Membership and patron opportunities
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="press">
-                            Press and cultural media
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="artist-opportunities">
-                            Artist and creative opportunities
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" name="interests" value="announcements">
-                            General announcements
+                        <label class="option-tile">
+                            <input type="radio" name="pathway" value="follow" required>
+                            <img class="option-tile-icon" src="public/img/icons/follow.svg" alt="">
+                            <span class="option-tile-title">Follow the Story</span>
+                            <span class="option-tile-desc">Launch news, press announcements, and Full Circle updates</span>
                         </label>
                     </div>
                 </fieldset>
 
-                <div class="flex flex-col gap-6 pt-4 border-t border-hairline-soft form:flex-row form:items-center form:justify-between">
-                    <label class="checkbox text-[0.78rem] form:max-w-[60ch]">
-                        <input type="checkbox" name="consent" required>
-                        I would like to receive news, invitations and updates from Full
-                        Circle Theatre. I understand that I can unsubscribe at any time.
-                    </label>
-                    <button class="btn btn-filled form:shrink-0" type="submit">Join the Circle</button>
+                <div class="flex justify-end pt-4">
+                    <button class="btn btn-filled" type="submit">Register for priority access</button>
                 </div>
             </form>
 
@@ -389,16 +281,44 @@
 
     <hr class="divider">
 
+    <section class="max-w-7xl mx-auto px-[5vw] py-14" id="support">
+        <div class="flex flex-wrap justify-center items-center gap-10 split:gap-16">
+            <div data-reveal>
+                <img class="w-24 h-24 rounded-full object-cover ring-1 ring-hairline-strong split:w-28 split:h-28"
+                     src="public/img/logos/fcta.png" width="1254" height="1254" alt="FCTA">
+            </div>
+            <div class="delay-200" data-reveal>
+                <img class="w-24 h-24 rounded-full object-cover ring-1 ring-hairline-strong split:w-28 split:h-28"
+                     src="public/img/logos/soho-reading-series.png" width="1254" height="1254" alt="Soho Reading Series">
+            </div>
+            <div class="delay-100" data-reveal>
+                <img class="w-24 h-24 rounded-full object-cover ring-1 ring-hairline-strong split:w-28 split:h-28"
+                     src="public/img/logos/mtinee.png" width="1254" height="1254" alt="Matinee">
+            </div>
+
+        </div>
+
+        <p class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mt-9 text-[0.72rem] font-medium tracking-eyebrow uppercase text-bronze delay-300"
+           data-reveal>
+            <span>Original Productions</span>
+            <span class="text-bronze text-[1.2rem] leading-none" aria-hidden="true">&middot;</span>
+            <span>New Writing</span>
+            <span class="text-bronze text-[1.2rem] leading-none" aria-hidden="true">&middot;</span>
+            <span>Artist Development</span>
+            <span class="text-bronze text-[1.2rem] leading-none" aria-hidden="true">&middot;</span>
+            <span>Global Distribution</span>
+        </p>
+    </section>
+
+    <hr class="divider">
+
 </main>
 
 <footer class="px-[5vw] pt-9 pb-9">
     <div class="max-w-7xl mx-auto flex flex-col items-center gap-9">
-        <div class="flex flex-col items-center text-center gap-4" data-reveal>
+        <div class="flex flex-col items-center text-center gap-8" data-reveal>
             <div class="max-w-[640px]">
-                <p class="eyebrow">Follow the
-                    Creation of a New Cultural Landmark</p>
-                <p class="text-primary/75 text-[0.9rem] mt-4">Follow the artists, ideas and creative discoveries shaping Full
-                    Circle Theatre.</p>
+                <p class="eyebrow">Follow the Creation of a New Cultural Landmark</p>
             </div>
             <div class="flex flex-wrap justify-center items-center gap-x-24 gap-y-10 w-full split:gap-x-0 split:divide-x split:divide-hairline-strong">
                 <a class="social-link split:px-28"
@@ -434,13 +354,13 @@
 
         <hr class="divider w-full">
 
-        <div class="flex flex-col items-center text-center gap-6 w-full split:flex-row split:justify-between">
-            <p class="text-[0.72rem] text-primary/75 order-3 split:order-1">© 2026 Full Circle Theatre. All rights reserved.</p>
-            <picture class="order-1 split:order-2">
+        <div class="grid grid-cols-3 items-center gap-6 w-full text-center">
+            <p class="text-[0.72rem] text-primary/75 justify-self-start text-left">© 2026 Full Circle Theatre. All rights reserved.</p>
+            <picture class="justify-self-center">
                 <source type="image/webp" srcset="public/img/logo.webp">
                 <img class="w-20 h-20 object-contain" src="public/img/logo.png" width="350" height="327" alt="Full Circle Theatre">
             </picture>
-            <div class="flex flex-wrap justify-center gap-6 order-2 split:order-3">
+            <div class="flex flex-wrap justify-end gap-6 justify-self-end">
                 <a class="text-[0.7rem] tracking-nav uppercase text-primary/75 hover:text-gold transition-colors duration-300 ease-cinematic"
                    href="#">Privacy Policy</a>
                 <a class="text-[0.7rem] tracking-nav uppercase text-primary/75 hover:text-gold transition-colors duration-300 ease-cinematic"
