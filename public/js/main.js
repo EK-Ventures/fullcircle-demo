@@ -15,19 +15,21 @@
   var form = document.getElementById('join-form');
   var confirmation = document.getElementById('join-confirmation');
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
+  if (form) {
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
 
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
 
-    form.hidden = true;
-    confirmation.hidden = false;
-    confirmation.setAttribute('tabindex', '-1');
-    confirmation.focus();
-  });
+      form.hidden = true;
+      confirmation.hidden = false;
+      confirmation.setAttribute('tabindex', '-1');
+      confirmation.focus();
+    });
+  }
 
   // Scroll reveal
   var revealTargets = document.querySelectorAll('[data-reveal]');

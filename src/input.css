@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @source "../index.html";
 @source "../index-v2.html";
+@source "../privacy-policy.html";
+@source "../terms-and-conditions.html";
 
 @theme {
   /* Colour */
