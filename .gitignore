@@ -1,6 +1,9 @@
 node_modules/
 .docs/
 .idea/
+.env
+.env.*
+!.env.example
 
 #AI
 CLAUDE.md

@@ -14,6 +14,7 @@
   // Join form
   var form = document.getElementById('join-form');
   var confirmation = document.getElementById('join-confirmation');
+  var formError = document.getElementById('join-form-error');
 
   if (form) {
     form.addEventListener('submit', function (event) {
@@ -24,10 +25,35 @@
         return;
       }
 
-      form.hidden = true;
-      confirmation.hidden = false;
-      confirmation.setAttribute('tabindex', '-1');
-      confirmation.focus();
+      var formData = new FormData(form);
+      var payload = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        pathway: formData.get('pathway'),
+      };
+      var submitButton = form.querySelector('button[type="submit"]');
+
+      formError.hidden = true;
+      submitButton.disabled = true;
+
+      fetch('/api/join', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error('Submission failed');
+          }
+          form.hidden = true;
+          confirmation.hidden = false;
+          confirmation.setAttribute('tabindex', '-1');
+          confirmation.focus();
+        })
+        .catch(function () {
+          formError.hidden = false;
+          submitButton.disabled = false;
+        });
     });
   }
 
