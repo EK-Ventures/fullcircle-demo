@@ -1,6 +1,6 @@
 const { google } = require('googleapis');
 
-const SHEET_RANGE = 'Sheet1!A:D';
+const SHEET_RANGE = 'Sheet1!A:E';
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PATHWAYS = ['attend', 'create', 'partner', 'follow'];
 
@@ -11,11 +11,13 @@ function isValidBody(body) {
     body.name.trim().length > 0 &&
     typeof body.email === 'string' &&
     EMAIL_PATTERN.test(body.email.trim()) &&
-    PATHWAYS.includes(body.pathway)
+    Array.isArray(body.pathways) &&
+    body.pathways.length > 0 &&
+    body.pathways.every((pathway) => PATHWAYS.includes(pathway))
   );
 }
 
-async function appendRow({ name, email, pathway }) {
+async function appendRow({ name, email, pathways, consent }) {
   const auth = new google.auth.JWT({
     email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
     key: process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY.replace(/\\n/g, '\n'),
@@ -28,7 +30,13 @@ async function appendRow({ name, email, pathway }) {
     range: SHEET_RANGE,
     valueInputOption: 'USER_ENTERED',
     requestBody: {
-      values: [[new Date().toISOString(), name.trim(), email.trim(), pathway]],
+      values: [[
+        new Date().toISOString(),
+        name.trim(),
+        email.trim(),
+        [...new Set(pathways)].join(', '),
+        consent === true ? 'yes' : 'no',
+      ]],
     },
   });
 }

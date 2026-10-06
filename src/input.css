@@ -144,8 +144,20 @@
     @apply py-[0.6em] px-[1.4em] text-[0.66rem];
   }
 
+  /* Join form card: gold border that's brightest at the top centre and
+     fades out toward the left/right edges and the bottom. Gradient
+     borders with rounded corners need the padding-box/border-box
+     background trick - no utility equivalent. */
+  .join-card {
+    @apply rounded-2xl;
+    border: 1px solid transparent;
+    background:
+      linear-gradient(var(--color-panel), var(--color-panel)) padding-box,
+      radial-gradient(70% 120% at 50% 0%, var(--color-gold), color-mix(in srgb, var(--color-gold) 12%, transparent)) border-box;
+  }
+
   .field-input {
-    @apply bg-panel border border-quiet text-primary font-body text-[0.88rem] py-[0.75em] px-[0.9em] rounded-[2px] transition-colors duration-[250ms] ease-cinematic appearance-none;
+    @apply bg-panel border border-quiet text-primary font-body text-[0.88rem] py-[0.75em] px-[0.9em] rounded-lg transition-colors duration-[250ms] ease-cinematic appearance-none;
   }
   .field-input:hover {
     @apply border-primary;
@@ -181,13 +193,26 @@
   }
 
   .option-tile {
-    @apply flex flex-col items-center justify-center text-center gap-[0.3em] bg-panel border border-hairline-strong rounded-[2px] px-[1.1em] py-[1.2em] cursor-pointer transition-colors duration-[250ms] ease-cinematic;
+    @apply relative flex flex-col items-center justify-center text-center gap-[0.3em] bg-panel border border-hairline-strong rounded-lg px-[1.1em] pt-[2em] pb-[1.2em] cursor-pointer transition-colors duration-[250ms] ease-cinematic;
   }
   .option-tile:hover {
-    @apply border-primary;
+    @apply border-gold/60;
   }
   .option-tile:has(input:checked) {
     @apply border-gold bg-gold/5;
+  }
+  .option-tile-check {
+    @apply absolute top-3 right-3 w-[18px] h-[18px] rounded-full border border-hairline-strong transition-colors duration-[250ms] ease-cinematic;
+  }
+  .option-tile:hover .option-tile-check {
+    @apply border-gold;
+  }
+  .option-tile:has(input:checked) .option-tile-check {
+    @apply bg-gold border-gold;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23101012' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 8.5l3 3 6-7'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
   }
   .option-tile:has(input:focus-visible) {
     outline: 1px solid var(--color-gold);

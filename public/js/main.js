@@ -15,10 +15,18 @@
   var form = document.getElementById('join-form');
   var confirmation = document.getElementById('join-confirmation');
   var formError = document.getElementById('join-form-error');
+  var pathwayError = document.getElementById('join-pathway-error');
 
   if (form) {
+    form.addEventListener('change', function (event) {
+      if (event.target.name === 'pathways') {
+        pathwayError.hidden = true;
+      }
+    });
+
     form.addEventListener('submit', function (event) {
       event.preventDefault();
+      pathwayError.hidden = true;
 
       if (!form.checkValidity()) {
         form.reportValidity();
@@ -26,10 +34,18 @@
       }
 
       var formData = new FormData(form);
+      var pathways = formData.getAll('pathways');
+      if (pathways.length === 0) {
+        pathwayError.hidden = false;
+        form.querySelector('input[name="pathways"]').focus();
+        return;
+      }
+
       var payload = {
         name: formData.get('name'),
         email: formData.get('email'),
-        pathway: formData.get('pathway'),
+        pathways: pathways,
+        consent: formData.get('consent') === 'yes',
       };
       var submitButton = form.querySelector('button[type="submit"]');
 

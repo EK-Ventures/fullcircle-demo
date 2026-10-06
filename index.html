@@ -210,7 +210,7 @@
         <div class="px-[5vw] grid:px-0 split:order-1" data-reveal>
             <p class="eyebrow">A NEW CULTURAL LANDMARK FOR LONDON</p>
             <h2 class="section-heading">Full Circle Theatre - a home for exceptional performance</h2>
-            <p class="font-display italic text-[1.25rem] leading-[1.25] text-primary mt-4">
+            <p class="text-primary/75 text-[0.92rem] leading-[1.4] mt-4">
                 Creative collaboration and new theatrical ideas are developed within a new London
                 destination of international standing.
             </p>
@@ -230,14 +230,24 @@
                 <p class="eyebrow">Be First in Line</p>
                 <h2 class="font-display font-medium text-primary text-[clamp(1.9rem,3.4vw,2.3rem)] mt-2">Join the Circle</h2>
                 <p class="text-primary/75 text-[0.92rem] leading-[1.4] max-w-[40ch] mt-4">
-                    With only 200 seats available at each performance, tickets will always be limited.
+                    With only 200 audience members at each performance, each of whom commands the best seat in
+                    the house, tickets will be limited.
                 </p>
                 <p class="text-primary/75 text-[0.92rem] leading-[1.4] max-w-[40ch] mt-4">
-                    Join the Circle for priority, new production announcements and special events.
+                    Given the calibre of performers - best-in-class actors, global celebrities, A-list talent, stars of
+                    stage and screen - demand will be exceptionally high.
+                </p>
+                <p class="font-display italic text-[1.25rem] leading-[1.25] text-primary mt-4">
+                    Join the Circle for priority booking, first news of productions and invitations to special events.
                 </p>
             </div>
 
-            <form class="flex flex-col gap-4 delay-150 grid:border-l grid:border-hairline-strong grid:pl-14" id="join-form" novalidate data-reveal>
+            <form class="join-card flex flex-col gap-4 p-6 delay-150 split:p-10 grid:-mt-[41px]" id="join-form" novalidate data-reveal>
+                <div class="flex flex-col gap-2 pb-2">
+                    <h3 class="font-body text-[0.8rem] font-semibold tracking-eyebrow uppercase text-gold">Enter your details to join the Circle</h3>
+                    <p class="text-primary/75 text-[0.92rem] leading-[1.4]">Register for priority booking, production announcements and invitations to special events.</p>
+                </div>
+
                 <div class="grid grid-cols-1 gap-4 xs:grid-cols-2">
                     <div class="flex flex-col gap-[0.4em]">
                         <label class="sr-only" for="name">Full name</label>
@@ -251,42 +261,58 @@
                     </div>
                 </div>
 
-                <fieldset class="border-0 pt-0 px-0 pb-0 split:pb-12 m-0">
-                    <legend class="text-primary/75 text-[0.92rem] leading-[1.4] pt-4 pb-2">What are you interested in?
+                <fieldset class="border-0 p-0 m-0">
+                    <legend class="text-[0.92rem] leading-[1.4] pt-1 pb-2">
+                        <span class="text-primary">What are you interested in?</span>
+                        <span class="text-quiet whitespace-nowrap">Select all that apply.</span>
                     </legend>
                     <div class="grid grid-cols-2 gap-2 xs:grid-cols-4">
                         <label class="option-tile">
-                            <input type="radio" name="pathway" value="attend" checked required>
+                            <input type="checkbox" name="pathways" value="attend">
+                            <span class="option-tile-check" aria-hidden="true"></span>
                             <img class="option-tile-icon" src="public/img/icons/attend.svg" alt="">
                             <span class="option-tile-title">Attend a Performance</span>
                             <span class="option-tile-desc">Priority tickets and production announcements</span>
                         </label>
                         <label class="option-tile">
-                            <input type="radio" name="pathway" value="create" required>
+                            <input type="checkbox" name="pathways" value="create">
+                            <span class="option-tile-check" aria-hidden="true"></span>
                             <img class="option-tile-icon" src="public/img/icons/create.svg" alt="">
                             <span class="option-tile-title">Create with Us</span>
                             <span class="option-tile-desc">Opportunities for performers, artists, and creative collaborators</span>
                         </label>
                         <label class="option-tile">
-                            <input type="radio" name="pathway" value="partner" required>
+                            <input type="checkbox" name="pathways" value="partner">
+                            <span class="option-tile-check" aria-hidden="true"></span>
                             <img class="option-tile-icon" src="public/img/icons/partner.svg" alt="">
                             <span class="option-tile-title">Partner with Us</span>
                             <span class="option-tile-desc">Commercial, sponsorship, partnership, cultural and investment conversations</span>
                         </label>
                         <label class="option-tile">
-                            <input type="radio" name="pathway" value="follow" required>
+                            <input type="checkbox" name="pathways" value="follow">
+                            <span class="option-tile-check" aria-hidden="true"></span>
                             <img class="option-tile-icon" src="public/img/icons/follow.svg" alt="">
                             <span class="option-tile-title">Follow the Story</span>
                             <span class="option-tile-desc">Launch news, press announcements, and Full Circle updates</span>
                         </label>
                     </div>
+                    <p class="text-[0.82rem] text-bronze pt-3" id="join-pathway-error" hidden>Please choose at least one option.</p>
                 </fieldset>
+
+                <div class="pt-2">
+                    <label class="checkbox">
+                        <input type="checkbox" name="consent" value="yes">
+                        <span>I'd like to receive emails from Full Circle Theatre about priority booking, productions, news and special events. I can unsubscribe at any time.</span>
+                    </label>
+                </div>
 
                 <p class="text-[0.82rem] text-bronze" id="join-form-error" hidden>Something went wrong submitting your
                     details. Please try again.</p>
 
-                <div class="flex justify-end pt-4">
-                    <button class="btn btn-filled" type="submit">Register for priority access</button>
+                <div class="flex flex-col gap-4 split:flex-row split:items-center split:justify-between">
+                    <p class="text-[0.72rem] text-quiet pl-[calc(15px+0.6em)]">We'll use your information in accordance with our
+                        <a class="text-gold underline underline-offset-2 hover:text-primary transition-colors duration-300 ease-cinematic" href="privacy-policy.html">Privacy Policy</a>.</p>
+                    <button class="btn btn-filled self-end shrink-0" type="submit">Register for priority access</button>
                 </div>
             </form>
 
