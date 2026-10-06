@@ -43,6 +43,7 @@
 
 @layer base {
   html {
+    color-scheme: dark;
     scroll-behavior: smooth;
     scroll-padding-top: var(--header-height-scrolled);
   }
@@ -170,6 +171,16 @@
   }
   select.field-input {
     @apply text-body font-light;
+  }
+  /* Chrome's autofill paints its own light background with !important in
+     the UA stylesheet, so background-color can't override it. An inset
+     shadow sits above the background and covers it instead; text colour
+     has to go through -webkit-text-fill-color for the same reason. */
+  .field-input:autofill,
+  .field-input:-webkit-autofill {
+    -webkit-text-fill-color: var(--color-primary);
+    caret-color: var(--color-primary);
+    box-shadow: 0 0 0 1000px var(--color-panel) inset;
   }
 
   .checkbox {
