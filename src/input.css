@@ -202,7 +202,7 @@
     @apply border-gold bg-gold/5;
   }
   .option-tile-check {
-    @apply absolute top-3 right-3 w-[18px] h-[18px] rounded-full border border-hairline-strong transition-colors duration-[250ms] ease-cinematic;
+    @apply absolute top-3 right-3 w-[20px] h-[20px] rounded-full bg-white/5 border border-body transition-colors duration-[250ms] ease-cinematic;
   }
   .option-tile:hover .option-tile-check {
     @apply border-gold;
